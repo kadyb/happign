@@ -37,7 +37,7 @@ for (i in seq_along(urls)) {
       util = "translate",
       source = urls[i],
       destination = tmp,
-      options = c("config", "GDAL_SKIP=DODS"))
+      options = c("--config", "GDAL_SKIP", "DODS"))
    
    tiles_list <- c(tiles_list, tmp)
 }
